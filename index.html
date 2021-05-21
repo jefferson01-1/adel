@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>unknown</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<ul>
+		<li><a href="#">H<span>ome</span></a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="https://diaryofadel.wordpress.com/">My Blog</a></li>
+		<li><a href="#">Contact</a></li>
+		<div class="cursor"></div>
+	</ul>
+	<script>
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', (e) => {
+			cursor.style.left = e.pageX + 'px';
+			cursor.style.top = e.pageY + 'px';
+		})
+	</script>
+</body>
+</html>
